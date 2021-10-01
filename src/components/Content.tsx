@@ -1,7 +1,5 @@
 import { FC } from "react";
-import Movies from "./Movies";
-import Places from "./Places";
-import Home from "./Home";
+import { Home, Places, Movies } from "./Pages";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 interface ContentProps {}

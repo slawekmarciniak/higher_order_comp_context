@@ -1,9 +1,12 @@
 import { createContext } from "react";
 
 export type APIContextDataType = {
-  userData: any;
+  userData: {
+    email: string;
+    isAdmin: boolean;
+  };
 };
-export const APIContextData = createContext<APIContextDataType | null>(null);
+export const APIContextData = createContext<APIContextDataType | any>(null);
 
 type Props = {
   children: React.ReactNode;

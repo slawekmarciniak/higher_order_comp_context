@@ -11,10 +11,13 @@ const Passphrase = () => {
     handleClick();
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input onChange={handleInputChange} value={inputValue} type="text" />
-      <button type="submit">confirm</button>
-    </form>
+    <>
+      <h1>enter 'clops'</h1>
+      <form onSubmit={handleSubmit}>
+        <input onChange={handleInputChange} value={inputValue} type="text" />
+        <button type="submit">confirm</button>
+      </form>
+    </>
   );
 };
 
