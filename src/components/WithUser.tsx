@@ -5,7 +5,7 @@ const WithUser = (WrappedComponent: FC) => {
   return () => {
     return (
       <AppProvider>
-        <WrappedComponent />;
+        <WrappedComponent />
       </AppProvider>
     );
   };
