@@ -2,7 +2,7 @@
   text-align: center;
 }
 .container__pages {
-  background-color: #c8d6e5;
+  background-color: #ffeaa7;
   min-height: 100vh;
   flex-grow: 1;
   }
@@ -14,7 +14,7 @@ ul {
   margin: 0;
   padding: 0;
   padding-top: 30px;
-  background-color: #d1dfee;
+  background-color: #fdcb6e;
 }
 .menu_element {
   display: flex;
@@ -39,6 +39,8 @@ a {
   padding-right: 15px;
 }
 .label {
+  width: 80px;
+  text-align: left;
   line-height: 40px;
   padding-right: 10px;
   padding-bottom: 1px;
