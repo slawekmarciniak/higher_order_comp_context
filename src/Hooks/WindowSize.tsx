@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-const useWindowSize = (maxMobileSize: number) => {
+const maxMobileSize: number = 1023;
+const useWindowSize = () => {
   const [{ isMobileSize }, setSize] = useState({
     isMobileSize: window.innerWidth > maxMobileSize ? false : true,
   });
