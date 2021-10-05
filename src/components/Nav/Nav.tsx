@@ -22,16 +22,17 @@ const navElements = [
   },
 ];
 
+const maxMobileSize: number = 1023;
+
 const Nav: FC<NavProps> = () => {
-  const { width } = useWindowSize();
-  const isDesctopSize = width > 1023 ? true : false;
+  const { isMobileSize } = useWindowSize(maxMobileSize);
   return (
     <ul>
       {navElements.map((el) =>
-        isDesctopSize ? (
-          <DesctopNavItem path={el.path} name={el.name} icon={el.icon} />
-        ) : (
+        isMobileSize ? (
           <MobileNavItem path={el.path} icon={el.icon} />
+        ) : (
+          <DesctopNavItem path={el.path} name={el.name} icon={el.icon} />
         )
       )}
     </ul>
