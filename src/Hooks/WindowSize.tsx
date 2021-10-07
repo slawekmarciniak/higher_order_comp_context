@@ -11,6 +11,7 @@ const useWindowSize = () => {
         isMobileSize: window.innerWidth > maxMobileSize ? false : true,
       });
     };
+
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);

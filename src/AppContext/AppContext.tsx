@@ -16,7 +16,7 @@ type Props = {
 };
 
 const AppProvider = ({ children }: Props) => {
-  const [isLogged, setIsLogged] = useState(true);
+  const [isLogged, setIsLogged] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
